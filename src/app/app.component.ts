@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
+import { ToggleComponent } from './toggle/toggle.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FirstAngularProject';
+  isChecked = false;
+  counter = 2;
+  currentIndex = 0;
+
+  ngOnInit(){
+  }
+
+  ngAfterViewInit(){
+  }
+
 }
